@@ -2,7 +2,7 @@ import {motion} from "framer-motion";
 import why_need from '../../assets/why_need.jpg';
 import problem_old from '../../assets/problem-old.jpg';
 import our_sol  from '../../assets/our_sol.jpeg';
-import './Info.css';
+import './info.css';
 import {SlideRight} from "../../Utility/animations";
 
 function Info(){

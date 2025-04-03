@@ -1,7 +1,7 @@
 import {Link} from "react-router-dom";
 import React from "react";
 import logo from "../../assets/logo.png";
-import './Navbar.css'
+import './navbar.css'
 import {motion} from "framer-motion";
 import {SlideDown} from "../../Utility/animations";
 
