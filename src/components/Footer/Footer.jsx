@@ -1,7 +1,7 @@
 import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
 import { FooterAnimation } from "../../Utility/animations";
-import "./Footer.css";
+import "./footer.css";
 
 const Footer = () => {
   return (
