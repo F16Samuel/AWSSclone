@@ -1,6 +1,6 @@
 import {Link} from "react-router-dom";
 import React from "react";
-import logo from "../../assets/logo.png";
+import logo from "../../assets/Logo.png";
 import './navbar.css'
 import {motion} from "framer-motion";
 import {SlideDown} from "../../Utility/animations";
