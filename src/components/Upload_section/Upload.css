@@ -1,0 +1,277 @@
+/* General Styling */
+.Hero-section {
+    margin-top: 1rem;
+    margin-left: 1rem;
+    margin-right: 1rem;
+    margin-bottom: 1rem;
+    background-image: url("../../assets/garbage_truck.webp");
+    background-size: cover;
+    height: 700px;
+    border-radius: 1rem;
+    display: flex;
+}
+
+.hero-section-text{
+    height: 90%;
+    width: 60%;
+    padding: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.Upload-img-header{
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+    font-size: 2.5rem;
+    text-shadow: 2px 2px 5px rgba(0,0,0,0.6);
+}
+
+.upload-img-text{
+    color: rgb(255, 255, 255);
+    font-size: 1.2rem;
+    text-shadow: 2px 2px 5px rgba(0,0,0,0.6);
+}
+
+.see-button{
+    width: 85%;
+    display: flex;
+    justify-content: center;
+}
+
+.see-button button{
+    background-color: rgba(245, 245, 220, 0.1);
+    border: 2px solid white;
+    padding: 0.8rem 1.5rem;
+    border-radius: 0.75rem;
+    color: white;
+    font-weight: bold;
+    font-size: 1rem;
+    transition: all 0.3s ease-in-out;
+    backdrop-filter: blur(5px);
+}
+
+.see-button button:hover{
+    background-color: #F5F5DC;
+    color: #21392e;
+    box-shadow: 0 4px 10px rgba(245, 245, 220, 0.3);
+    transform: scale(1.05);
+}
+
+/* Hero Section Image & Response */
+.hero-section-image{
+    width: 40%;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero-section-image-2 {
+    background: rgba(0, 0, 0, 0.6);
+    padding: 1.5rem;
+    border-radius: 0.75rem;
+    text-align: center;
+    width: 80%; 
+    max-width: 400px;
+    backdrop-filter: blur(8px);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+.hero-section-image-2 p {
+    color: white;
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+.hero-section-image-2 input {
+    background: rgba(255, 255, 255, 0.2);
+    border: 1px solid rgba(255, 255, 255, 0.4);
+    padding: 0.8rem;
+    border-radius: 0.5rem;
+    color: white;
+    font-size: 1rem;
+    width: 100%;
+    max-width: 350px;
+}
+
+.preview-image{
+    max-height: 200px;
+    margin-bottom: 1rem;
+}
+
+/* Response Message Styling */
+.result-container {
+    margin-top: 1rem;
+    padding: 1rem;
+    border-radius: 8px;
+    width: 80%;
+    max-width: 400px;
+    text-align: center;
+    font-size: 1.2rem;
+    font-weight: bold;
+    animation: fadeIn 0.5s ease-in-out;
+}
+
+.success-message {
+    background-color: #dff0d8;
+    color: #3c763d;
+}
+
+.error-message {
+    background-color: #f2dede;
+    color: #a94442;
+}
+
+.success-message p {
+    font-size: 1.1rem;
+    font-weight: bold;
+    color: #3c763d;
+    margin: 0;
+    line-height: 1.5;
+  }
+  
+  .error-message p {
+    font-size: 1.1rem;
+    font-weight: bold;
+    color: #a94442;
+    margin: 0;
+    line-height: 1.5;
+  }
+  
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+    .Hero-section {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .hero-section-text {
+        width: 90%;
+        display: flex;
+        justify-content: center;
+    }
+
+    .see-button{
+        padding-left: 40px;
+    }
+
+    .hero-section-image {
+        width: 90%;
+    }
+
+    .hero-section-image-2 {
+        width: 90%;
+    }
+}
+
+@media (max-width: 768px) {
+    .Hero-section {
+        padding: 1rem;
+    }
+
+    .hero-section-text {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .Upload-img-header {
+        font-size: 2rem;
+    }
+
+    .upload-img-text {
+        font-size: 1rem;
+    }
+
+    .see-button {
+        width: 75%;
+        padding-left: 3.5rem;
+    }
+
+    .hero-section-image {
+        width: 100%;
+    }
+
+    .hero-section-image-2 {
+        width: 100%;
+    }
+
+    .hero-section-image-2 input {
+        width: 90%;
+    }
+
+    .preview-image {
+        max-height: 150px;
+    }
+}
+
+/* Mobile Design (max-width: 480px) */
+@media (max-width: 480px) {
+    .Hero-section {
+        margin: 1rem;
+    }
+
+    .hero-section-text {
+        width: 100%;
+        padding: 0.5rem;
+    }
+
+    .Upload-img-header {
+        font-size: 1.8rem;
+    }
+
+    .upload-img-text {
+        font-size: 0.9rem;
+    }
+
+    .see-button {
+        width: 100%;
+        padding-left: 0;
+    }
+
+    .see-button button {
+        padding: 0.6rem 1.2rem;
+        font-size: 0.9rem;
+    }
+
+    .hero-section-image {
+        padding: 0.5rem;
+    }
+
+    .hero-section-image-2 {
+        padding: 1rem;
+        width: 95%;
+    }
+
+    .hero-section-image-2 p {
+        font-size: 1rem;
+    }
+
+    .hero-section-image-2 input {
+        padding: 0.6rem;
+        font-size: 0.9rem;
+        width: 100%;
+    }
+
+    .result-container {
+        font-size: 1rem;
+        width: 90%;
+    }
+
+    .success-message p,
+    .error-message p {
+        font-size: 1rem;
+    }
+}
+
+
+/* Animation for Response Message */
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}

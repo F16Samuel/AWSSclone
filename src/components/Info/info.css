@@ -1,0 +1,179 @@
+.info-holder {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 7rem;
+    gap: 5rem;
+    width: 100%;
+}
+
+.info-holder-1{
+    display: flex;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    align-items: center;
+}
+
+.info-holder-1-image{
+    padding-right: 3rem;
+   img{
+        width: 500px;
+        height: auto;
+        border-radius: 10px;
+        object-fit: cover;
+   }
+}
+
+.info-holder-1-text{
+    h2{
+        font-size: 2rem;
+        color: #333;
+        margin-bottom: 1rem;
+    }
+
+    p{
+        font-size: 1.1rem;
+        line-height: 1.5;
+        color: #555;
+    }
+}
+
+.info-holder-2{
+    display: flex;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    align-items: center;
+    overflow-x: hidden;
+}
+
+.info-holder-2-text{
+    h2{
+        font-size: 2rem;
+        color: #333;
+        margin-bottom: 1rem;
+        overflow-x: hidden;
+    }
+
+    p{
+        font-size: 1.1rem;
+        line-height: 1.5;
+        color: #555;
+        overflow-x: hidden;
+    }
+}
+
+.info-holder-2-image{
+    padding-left: 2.5rem;
+   img{
+        width: 500px;
+        height: auto;
+        border-radius: 10px;
+        object-fit: cover;
+        overflow-x: hidden;
+   }
+}
+
+.info-holder-3{
+    display: flex;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    align-items: center;
+    overflow-x: hidden;
+}
+
+.info-holder-3-text{
+    h2{
+        font-size: 2rem;
+        color: #333;
+        margin-bottom: 1rem;
+        overflow-x: hidden;
+    }
+
+    p{
+        font-size: 1.1rem;
+        line-height: 1.5;
+        color: #555;
+        overflow-x: hidden;
+    }
+}
+
+.info-holder-3-image{
+    padding-right: 3rem;
+   img{
+        width: 550px;
+        height: auto;
+        border-radius: 10px;
+        object-fit: cover;
+        overflow-x: hidden;
+   }
+}
+
+
+@media (max-width: 1024px) {
+    .info-holder {
+        padding-top: 4rem; /* Reduce top padding on smaller screens */
+        gap: 3rem;
+    }
+
+    .info-holder-1,
+    .info-holder-2,
+    .info-holder-3 {
+        flex-direction: column;
+        text-align: center;
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+
+    .info-holder-1-image,
+    .info-holder-2-image,
+    .info-holder-3-image {
+        padding: 0;
+        display: flex;
+        justify-content: center;
+        margin-bottom: 1rem; /* Adds spacing between image and text */
+    }
+
+    .info-holder-1-text h2,
+    .info-holder-2-text h2,
+    .info-holder-3-text h2 {
+        font-size: 1.8rem; /* Reduce heading size slightly */
+    }
+
+    .info-holder-1-text p,
+    .info-holder-2-text p,
+    .info-holder-3-text p {
+        font-size: 1rem; /* Reduce paragraph text size slightly */
+    }
+
+    .info-holder-1-image img,
+    .info-holder-2-image img,
+    .info-holder-3-image img {
+        width: 100%;
+        max-width: 400px; /* Prevents images from being too large */
+    }
+}
+
+@media (max-width: 768px) {
+    .info-holder {
+        padding-top: 3rem;
+        gap: 2rem;
+    }
+
+    .info-holder-1-text h2,
+    .info-holder-2-text h2,
+    .info-holder-3-text h2 {
+        font-size: 1.5rem;
+    }
+
+    .info-holder-1-text p,
+    .info-holder-2-text p,
+    .info-holder-3-text p {
+        font-size: 0.95rem;
+    }
+
+    .info-holder-1-image img,
+    .info-holder-2-image img,
+    .info-holder-3-image img {
+        max-width: 300px;
+    }
+}

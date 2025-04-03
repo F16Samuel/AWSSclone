@@ -1,0 +1,121 @@
+a {
+    text-decoration: none;
+    color: #000;
+}
+
+.Navbar {
+    padding-left: 2rem;
+    padding-right: 2rem;
+    padding-top: 1.25rem;
+    padding-bottom: 1.25rem; 
+    background-color: #0B694A;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo {
+    background-color: white;
+    border-radius: 0.5rem;
+    width: 8rem;
+}
+
+.navlinks-div {
+    display: flex;
+    width: 600px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navlinks {
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+.navlinks {
+    color: white;
+    a {
+        color: white;
+    }
+    transition: transform 0.3s ease-in-out, color 0.3s ease-in-out;
+}
+
+.navlinks:hover {
+    opacity: 0.7;
+    transform: scale(1.2);
+}
+
+.btn-touch {
+    background-color: rgba(245, 245, 220, 0.1); /* Light transparent cream */
+    border: 2px solid white; /* Cream border */
+    padding: 0.8rem 1.5rem; /* More padding */
+    border-radius: 0.75rem; /* More rounded */
+    color: white; /* Text color */
+    font-weight: bold;
+    font-size: 1rem; /* Slightly bigger text */
+    transition: all 0.3s ease-in-out; 
+    backdrop-filter: blur(5px); /* Slight glass effect */
+}
+
+.btn-touch:hover {
+    background-color: #F5F5DC; /* Cream on hover */
+    color: #21392e; /* Dark green text */
+    box-shadow: 0 4px 10px rgba(245, 245, 220, 0.3); /* Soft glow */
+    transform: scale(1.05); /* Slight scale effect */
+}
+
+/* 🔹 Responsive Styles for Smaller Screens */
+@media (max-width: 1000px) {
+    .Navbar {
+        flex-direction: column;
+        align-items: center;
+        padding: 2rem;
+    }
+
+    .logo {
+        width: 6rem;
+    }
+
+    .navlinks-div {
+        width: 100%;
+        justify-content: center;
+        gap: 15px;
+        margin-top: 10px;
+        margin-bottom: 20px;
+    }
+
+    .navlinks {
+        font-size: 1rem;
+    }
+
+    .btn-touch {
+        padding: 0.6rem 1rem;
+        font-size: 0.9rem;
+    }
+}
+
+/* 🔹 Mobile View (max-width: 480px) */
+@media (max-width: 480px) {
+    .Navbar {
+        padding: 0.8rem;
+    }
+
+    .logo {
+        width: 5rem;
+    }
+
+    .navlinks-div {
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+
+    .navlinks {
+        font-size: 0.9rem;
+    }
+
+    .btn-touch {
+        font-size: 0.8rem;
+        padding: 0.5rem 0.8rem;
+    }
+}
