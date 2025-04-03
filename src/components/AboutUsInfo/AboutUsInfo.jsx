@@ -1,6 +1,6 @@
 import React from "react";
 import { motion } from "framer-motion";
-import Shauviq from "../../assets/shauviq.jpg";
+import Shauviq from "../../assets/Shauviq.jpg";
 import Aanan from "../../assets/Aanan.jpg";
 import Samar from "../../assets/Samar.jpg";
 import { FaGithub, FaLinkedin, FaInstagram } from "react-icons/fa";
