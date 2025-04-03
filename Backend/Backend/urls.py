@@ -21,3 +21,5 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path('api/', include('awssbackend.urls'))
 ]
+
+ROOT_URLCONF = 'Backend.Backend.urls'
