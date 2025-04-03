@@ -2,7 +2,7 @@ import HeroSection from "../Hero Section/Hero_Sec";
 import Navbar from "../navbar/Navbar";
 import Footer from "../Footer/Footer";
 import ModelInfo from "../model_info/ModelInfo";
-import "./Model.css";
+import "./model.css";
 
 function Model(){
     return(
